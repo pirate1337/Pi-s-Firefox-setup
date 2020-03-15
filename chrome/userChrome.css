@@ -1,0 +1,54 @@
+/*URLBAR*/
+#urlbar {
+/*	background-color: transparent !important;za */
+	text-align: center;
+}
+
+/*HIDE SHIT*/
+#identity-box {
+  display: none !important;
+}
+
+/* Set blank page background-color */
+/* Uses color from theme_colors if available */
+#tabbrowser-tabpanels{
+  background-color: var(--uc-light-bkgnd-color,rgb(36,36,36)) !important;
+}
+
+/* Tab removal */
+.tab-background{ border-top: none !important
+}
+
+/* Show close buttons on tabs only on hover */
+.tabbrowser-tab:not([pinned]):not([selected]) .tab-close-button {
+  display: none !important;
+}
+
+/* Remove 'Search with' */
+#PopupAutoCompleteRichResult richlistitem:first-of-type[type*="heuristic"],
+#PopupAutoCompleteRichResult richlistitem:first-of-type[actiontype="searchengine"],
+#PopupAutoCompleteRichResult richlistitem:first-of-type[actiontype="visiturl"], 
+#PopupAutoCompleteRichResult richlistitem:first-of-type[actiontype="keyword"] {
+  display:none !important;
+}
+
+/* Blank the placeholder text in the address bar */
+.urlbar-input-box > .urlbar-input::placeholder {
+  opacity: 0 !important;
+}
+
+/* Blank the placeholder text in the search bar */
+#searchbar .textbox-input::placeholder {
+  opacity: 0 !important;
+}
+
+/* Hide urlbar boarder */
+#urlbar {
+  border-color: transparent !important;
+  border-width: 0px !important;
+}
+
+/*
+ * Do not remove the @namespace line -- it's required for correct functioning
+ */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* set default namespace to XUL */
