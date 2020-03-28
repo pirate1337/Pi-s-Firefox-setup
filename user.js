@@ -42,7 +42,7 @@ user_pref("dom.webaudio.enabled",				false);
 
 // PREF: Disable Location-Aware Browsing (geolocation)
 // https://www.mozilla.org/en-US/firefox/geolocation/
-user_pref("geo.enabled",					false);
+// user_pref("geo.enabled",					false);
 
 // PREF: When geolocation is enabled, use Mozilla geolocation service instead of Google
 // https://bugzilla.mozilla.org/show_bug.cgi?id=689252
@@ -75,7 +75,7 @@ user_pref("dom.netinfo.enabled",				false);
 // https://www.torproject.org/projects/torbrowser/design/#fingerprinting-defenses
 user_pref("dom.network.enabled",				false);
 
-// PREF: Disable WebRTC entirely to prevent leaking internal IP addresses (Firefox < 42)
+// PREF: Disable WebRTC entirely to prevent leaking internal IP ees (Firefox < 42)
 // NOTICE: Disabling WebRTC breaks peer-to-peer file sharing tools (reep.io ...)
 user_pref("media.peerconnection.enabled",			false);
 
@@ -209,8 +209,8 @@ user_pref("camera.control.face_detection.enabled",		false);
 // PREF: Disable GeoIP lookup on your address to set default search engine region
 // https://trac.torproject.org/projects/tor/ticket/16254
 // https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections#w_geolocation-for-default-search-engine
-user_pref("browser.search.countryCode",				"US");
-user_pref("browser.search.region",				"US");
+user_pref("browser.search.countryCode",				"AU");
+user_pref("browser.search.region",				"AU");
 user_pref("browser.search.geoip.url",				"");
 
 // PREF: Set Accept-Language HTTP header to en-US regardless of Firefox localization
@@ -233,9 +233,9 @@ user_pref("clipboard.autocopy",					false);
 // https://hg.mozilla.org/mozilla-central/rev/52d635f2b33d
 user_pref("javascript.use_us_english_locale",			true);
 
-// PREF: Do not submit invalid URIs entered in the address bar to the default search engine
+// PREF: submit invalid URIs entered in the address bar to the default search engine
 // http://kb.mozillazine.org/Keyword.enabled
-user_pref("keyword.enabled",					false);
+user_pref("keyword.enabled",					true);
 
 // PREF: Don't trim HTTP off of URLs in the address bar.
 // https://bugzilla.mozilla.org/show_bug.cgi?id=665580
@@ -615,12 +615,12 @@ user_pref("network.dns.blockDotOnion",				true);
 
 // PREF: Disable search suggestions in the search bar
 // http://kb.mozillazine.org/Browser.search.suggest.enabled
-user_pref("browser.search.suggest.enabled",			false);
+user_pref("browser.search.suggest.enabled",			true);
 
 // PREF: Disable "Show search suggestions in location bar results"
-user_pref("browser.urlbar.suggest.searches",			false);
+user_pref("browser.urlbar.suggest.searches",			true);
 // PREF: When using the location bar, don't suggest URLs from browsing history
-user_pref("browser.urlbar.suggest.history",			false);
+user_pref("browser.urlbar.suggest.history",			true);
 
 // PREF: Disable SSDP
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1111967
