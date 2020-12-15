@@ -11,4 +11,4 @@ The user.js is built with security in mind but with some tweaks to make it suiti
 
 My userChrome setup is pretty stock but with a few changes such as removing uncessary things and centering the url bar. It works best with the compact customisation but will also work fine with the other 2.
 
-##THIS REPO IS DEAD SINCE I DO NOT USE FIREFOX ANYMORE
+# THIS REPO IS DEAD SINCE I DO NOT USE FIREFOX ANYMORE
